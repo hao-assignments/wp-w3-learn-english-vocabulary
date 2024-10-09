@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="Learn_English_Vocabulary.LoginWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Learn_English_Vocabulary"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Activated="Window_Activated" Title="Sign In">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Sign In" Margin="10"  Style="{StaticResource TitleTextBlockStyle}" HorizontalAlignment="Center"/>
+            <TextBox x:Name="UsernameTextBox" PlaceholderText="Username" Margin="10" Width="300" HorizontalAlignment="Center"/>
+            <PasswordBox x:Name="PasswordBox" PlaceholderText="Password" Margin="10" Width="300" HorizontalAlignment="Center"/>
+            <CheckBox Name="rememberCheckBox" Content="Remember me" Margin="10" HorizontalAlignment="Left"/>
+            <Button Content="Sign In" Margin="10 20" Style="{StaticResource AccentButtonStyle}" Width="120" HorizontalAlignment="Right" Click="SignInButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
